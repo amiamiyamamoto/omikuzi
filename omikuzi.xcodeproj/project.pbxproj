@@ -12,6 +12,7 @@
 		E79F3A1A1FC18B8F0045FEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79F3A181FC18B8F0045FEFB /* Main.storyboard */; };
 		E79F3A1C1FC18B8F0045FEFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79F3A1B1FC18B8F0045FEFB /* Assets.xcassets */; };
 		E79F3A1F1FC18B8F0045FEFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79F3A1D1FC18B8F0045FEFB /* LaunchScreen.storyboard */; };
+		E79F3A291FC18D710045FEFB /* OmikuziViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79F3A281FC18D710045FEFB /* OmikuziViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E79F3A1B1FC18B8F0045FEFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E79F3A1E1FC18B8F0045FEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79F3A201FC18B8F0045FEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E79F3A281FC18D710045FEFB /* OmikuziViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OmikuziViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				E79F3A141FC18B8F0045FEFB /* AppDelegate.swift */,
 				E79F3A161FC18B8F0045FEFB /* ViewController.swift */,
 				E79F3A181FC18B8F0045FEFB /* Main.storyboard */,
+				E79F3A281FC18D710045FEFB /* OmikuziViewController.swift */,
 				E79F3A1B1FC18B8F0045FEFB /* Assets.xcassets */,
 				E79F3A1D1FC18B8F0045FEFB /* LaunchScreen.storyboard */,
 				E79F3A201FC18B8F0045FEFB /* Info.plist */,
@@ -137,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E79F3A171FC18B8F0045FEFB /* ViewController.swift in Sources */,
+				E79F3A291FC18D710045FEFB /* OmikuziViewController.swift in Sources */,
 				E79F3A151FC18B8F0045FEFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
