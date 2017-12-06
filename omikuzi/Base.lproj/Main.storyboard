@@ -32,18 +32,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tdh-8Z-Agr">
-                                <rect key="frame" x="133" y="96" width="97" height="30"/>
+                                <rect key="frame" x="133" y="99" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="j9O-60-FmX"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubQ-eI-6s5">
-                                <rect key="frame" x="133" y="207" width="97" height="30"/>
+                                <rect key="frame" x="133" y="206" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="ageFieldAction:" destination="BYZ-38-t0r" eventType="editingChanged" id="dxH-HA-nIa"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RfR-HE-9zJ">
                                 <rect key="frame" x="133" y="312" width="93" height="57"/>
@@ -57,10 +63,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ageField" destination="ubQ-eI-6s5" id="1e4-Wh-4hC"/>
+                        <outlet property="nameField" destination="Tdh-8Z-Agr" id="aFs-x3-Tku"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+            <point key="canvasLocation" x="-113" y="133"/>
         </scene>
         <!--Omikuzi View Controller-->
         <scene sceneID="B3B-KR-bey">
@@ -70,8 +80,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あみさん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3p-UV-yB4">
-                                <rect key="frame" x="152" y="95" width="70" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あみさん" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v3p-UV-yB4">
+                                <rect key="frame" x="82" y="97" width="210" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -95,13 +105,21 @@
                                 <rect key="frame" x="126" y="312" width="123" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="もう一度"/>
+                                <connections>
+                                    <segue destination="Fx6-r3-WwR" kind="unwind" unwindAction="restart:" id="Xlc-4g-HnD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="sdo-7z-dRR"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="v3p-UV-yB4" id="xTb-nN-Nlu"/>
+                        <outlet property="resultLabel" destination="gvK-UQ-WJk" id="nri-z0-3wN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TwB-bT-7gb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Fx6-r3-WwR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="636" y="132.68365817091455"/>
         </scene>
